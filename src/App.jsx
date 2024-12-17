@@ -14,12 +14,26 @@ import facebook from './assets/images/icon-facebook.svg'
 import twitter from './assets/images/icon-twitter.svg'
 import instagram from './assets/images/icon-instagram.svg'
 import pinterest from './assets/images/icon-pinterest.svg'
+import { ReactLenis, useLenis } from 'lenis/react'
+
 
 function App() {
+  const lenis = useLenis(({ scroll }) => {
+    // Runs every time the page scrolls
+    console.log('Scroll position:', scroll);
+  });
+  
+
 
 
   return (
-  <main>
+ <ReactLenis root options={{
+  duration: 1.2, // Slower animation
+  easing: (t) => 1 - Math.pow(1 - t, 3),
+  smooth: true,
+  wheelMultiplier: 1.2, // Adjust scroll sensitivity
+}}>
+   <main>
     <section className="bg-[url('/src/assets/images/desktop/image-header.jpg')] h-screen bg-no-repeat bg-center">
       <nav className='flex items-center justify-between container mx-auto pt-6'>
         <h1 className='font-barlow font-extrabold text-white text-4xl'>
@@ -137,6 +151,7 @@ function App() {
       </div>
     </footer>
   </main>
+ </ReactLenis>
   )
 }
 
