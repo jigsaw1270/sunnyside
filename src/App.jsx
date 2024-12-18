@@ -60,13 +60,13 @@ window.addEventListener('resize', () => {
        <button className='block md:hidden'> <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg></button>
       </nav>
       <div className='flex flex-col items-center justify-between md:gap-y-28 gap-y-8 md:pb-0 pb-16'>
-          <h1 className='text-white md:text-8xl text-5xl max-sm:text-center font-fraunces font-bold uppercase tracking-widest mt-[8rem]'>we are creatives</h1>
+          <h1 className='text-white md:text-7xl text-5xl max-sm:text-center font-fraunces font-bold uppercase tracking-widest mt-[8rem]'>we are creatives</h1>
           <img src={downarrow} alt="downarrow"/>
         </div>
 
     </section>
 
-    <section className='flex md:flex-row  flex-col-reverse items-center justify-between bg-[var(--white)]'>
+    <section className='flex md:flex-row  flex-col-reverse items-center justify-between bg-[#fffbf8]'>
       <div className='mx-auto  max-sm:text-center'>
         <h1 className='font-fraunces text-5xl font-extrabold my-8'>
           Transform your <br /> brand
