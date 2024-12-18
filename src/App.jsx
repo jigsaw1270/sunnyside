@@ -80,7 +80,7 @@ window.addEventListener('resize', () => {
     </section>
 
 
-    <section className='flex  flex-col-reverse  md:flex-row-reverse items-center justify-between bg-[var(--white)]'>
+    <section className='flex  flex-col-reverse  md:flex-row-reverse items-center justify-between bg-[#fffbf8]'>
       <div className='mx-auto  max-sm:text-center'>
         <h1 className='font-fraunces text-5xl font-extrabold my-8'>
           Stand out to the right <br /> audience
